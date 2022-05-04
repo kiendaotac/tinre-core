@@ -16,4 +16,9 @@ class HomeController extends Controller
 
         return view('tinre::home');
     }
+
+    public function index(Request $request)
+    {
+        return view('homepage');
+    }
 }

@@ -39,8 +39,8 @@ class RouteRegistration
 
     public function withHomeRoute($middleware = ['web']): RouteRegistration
     {
-        Route::get('/', 'Devpri\Tinre\Http\Controllers\HomeController@show')->middleware($middleware);
-
+        Route::get('generate', 'Devpri\Tinre\Http\Controllers\HomeController@show')->middleware($middleware);
+        Route::get('/', 'Devpri\Tinre\Http\Controllers\HomeController@index')->middleware($middleware);
         return $this;
     }
 
